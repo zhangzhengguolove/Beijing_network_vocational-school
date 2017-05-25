@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+	margin: 0;
+
+	text-decoration: none;
+	list-style: none;
+
+	font-family: "microsoft yahei";
+	font-weight: normal;
+}
+
+
+/*中间 内容盒子*/
+.news.container{
+	padding: 0;
+
+	font-family: "microsoft yahei";
+	font-weight: normal;
+}
+
+
+/*内容*/
+/*1 专业标题*/
+.news .main_title{
+	height: 28px;
+
+	background-image: url(../img/mbx01.png);
+	background-repeat: no-repeat;
+	background-size: 100% 28px;
+
+	line-height: 28px;
+	overflow: hidden;
+
+	margin-bottom: 10px;
+	width: 964px;
+
+	/*border: 1px red solid;*/
+}
+
+/*小图标 屋子*/
+.main_title .home{
+	background: url(../img/misc.png) 27px -149px no-repeat;
+    padding: 0px 0 0 45px;
+    color: #333;
+
+    text-decoration: none;
+    position: relative;
+    top: 3px;
+}
+
+/*返回首页 链接*/
+.main_title  a{
+	color: #333;
+    text-decoration: none;
+}
+
+/*2 标题 专业详细信息*/
+.news .information{
+	background-image: url(../img/major03.jpg);
+	background-size: 100% 100%;
+
+	color: #fff;
+    font-size: 1.6em;
+
+    height: 38px;
+    line-height: 38px;
+
+    font-family: "microsoft yahei";
+    margin: 0 0 10px;
+
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 964px;
+
+    /*border: 1px red solid;*/
+}
+
+.information ul li {
+	/*float: left;*/
+	margin: 0 13px;
+	font-size: .7em;
+	float: left;
+}
+
+/*3、详细内容 1 2 3*/
+.target,.content,.direction{
+	border: 1px solid #CCD3DD;
+
+	padding: 18px;
+	height: 448px;
+
+
+	background-image: url(../img/major02.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	font-size: 13px;
+    text-indent: 2em;
+    line-height: 1.7;
+}
+
+/*教学内容*/
+.news .content{
+	margin:  0 10px 10px 10px;
+}
+
+/*中间主要内容 详情 微调*/
+.container.news div img{
+	margin-bottom: 18px;
+	display: block;
+}
+
+.container.news div p{
+	margin-bottom: 0;
+}
+.container.news div .title{
+	text-indent: 4em;
+}
+
+
+
+/*4 底部专业总标题*/
+.container.news .total_title{
+	background: url(../img/total_bg.jpg);
+    border-radius: 3px;
+    background-size: 100% 100%;
+
+    width: 964px;
+    height: 37px;
+    line-height: 37px;
+
+    float: left;
+}
+
+.total_title li{
+	float: left;
+    font-size: 1.2em;
+
+    margin-left: 10px;
+    height: 37px;
+}
+
+/*小图标*/
+.total_title li span{
+	display: block;
+
+	background: url(../img/misc.png) 0 -323px;
+	width: 17px;
+	height: 18px;
+
+	float: left;
+	margin-right: 2px;
+
+	position: relative;
+	top: 9px;
+
+}
+
+.total_title a{
+	text-decoration: none;
+	color: #333;
+}
+
+
+
+
+/*内容 变化*/
+@media (max-width: 1199px) 
+{   
+	/*2 中间主要内容*/
+	.news.container div
+	{
+		/*width: 100%;*/
+		height: auto;
+
+		margin: 10px auto;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		/*float: none;*/
+		overflow: hidden;
+		font-size: 1.1em;
+		line-height: 2;
+	}
+    
+    /*1 专业标题*/
+	.container.news .main_title{
+		height: 28px;
+		margin-top: 0;
+		line-height: 28px;
+		width: 100%;
+	}
+    
+    /*2 专业 信息  代码 名称 方向*/
+    .container.news .information {
+    	width: 100%;
+    }
+	.container.news .information li{
+		height: 38px;
+		font-size: 1.0em;
+		line-height: 38px;
+
+		position: relative;
+		top:6px;
+
+		margin-bottom: 10px;
+		/*width: 1000px;*/
+
+		/*float: left;*/
+	}
+    
+    /*专业名称*/
+
+    /*4所有专业详情*/
+	.container.news .total_title{
+		height: auto;
+		width: 100%;
+
+		margin-top: 0;
+	}
+
+	.container.news .total_title li{
+		width: 46%;	
+		margin-left: 10px;
+
+		float: left;
+		text-align: center;
+	}
+    
+    /*小图标*/
+	.container.news .total_title li span{
+		position: relative;
+		left: 20px;
+	}
+
+}
+
+/*4 所有专业 第二种变化*/
+@media (max-width: 540px) 
+{   
+
+	.container.news .information li{
+		font-size: 1.3em;
+		display: none;
+	}
+    
+    /*专业名称*/
+	.container.news .information li:nth-child(2) 
+	{
+	    display: block;
+	}
+
+	/*专业信息*/
+	.container.news .total_title{
+		height: auto;
+		width: 100%;
+	}
+
+	.container.news .total_title li{
+		width:100%;
+		margin-left: 0;
+		float: left;
+		overflow: hidden;
+
+	}
+     
+    /*小图标*/
+	.container.news .total_title li span{
+		position: relative;
+		left: 0;
+	}
+}
+
+
+
+
+
